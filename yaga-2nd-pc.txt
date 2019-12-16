@@ -1,0 +1,27 @@
+﻿1) Процессор Intel Core i7-8700K - 797р
+2) Материнская плата ASUS Prime Z370-A - 383р
+3) x4 Оперативная память HyperX Fury RGB 8GB - 110р (440р)
+4) Видеокарта Gigabyte AORUS GeForce RTX 2080 Super - 1760р
+5) SSD Samsung 970 Evo 500GB - 262р
+6) SSD Samsung 970 Evo Plus 1TB - 403р
+7) Жесткий диск Seagate BarraCuda 2TB - 121р
+8) Wi-Fi адаптер TP-Link Archer T6E - 64р
+9) Блок питания Chieftec A-90 750W - 151р
+10) Кулер для процессора Thermaltake Contac Silent 12 - 62р
+11) x5 Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM - 53р (265р)
+12) Корпус Thermaltake Versa C23 версия с закаленным стеклом RGB - 167р
+
+1) https://catalog.onliner.by/cpu/intel/i78700k
+2) https://catalog.onliner.by/motherboard/asus/primez370a
+3) https://catalog.onliner.by/dram/hyperx/hx432c16fb3a8
+4) https://catalog.onliner.by/videocard/gigabyte/gvn208saorus8gc
+5) https://catalog.onliner.by/ssd/samsung/mzv7e500bw
+6) https://catalog.onliner.by/ssd/samsung/mzv7s1t0bw
+7) https://catalog.onliner.by/hdd/seagate/st2000dm006
+8) https://catalog.onliner.by/wirelessadapter/tp_link/archert6e
+9) https://catalog.onliner.by/powersupply/chieftec/gdp750c
+10) https://catalog.onliner.by/fan/thermaltake/clp039al12bla
+11) https://catalog.onliner.by/fan/bequiet/bl066
+12) https://catalog.onliner.by/chassis/thermaltake/ca1h700m1wn00
+
+Итого: 4872р, ~145087₽, ~2316$ на 16.12.2019
