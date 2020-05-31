@@ -1,0 +1,19 @@
+﻿1) Процессор AMD Ryzen 5 3600 - 399р
+2) Материнская плата ASUS TUF B450-Pro Gaming - 280р
+3) Оперативная память G.Skill Ripjaws V 2x8GB - 282р
+4) Видеокарта Gigabyte GeForce GTX 1660 Super - 668р
+5) SSD Crucial P1 1TB - 268р
+6) Блок питания Chieftec Polaris PPS-650FC - 194р
+7) Кулер для процессора PCCooler GI-X5R - 56р
+8) Корпус Zalman X3 - 221р
+
+1) https://catalog.onliner.by/cpu/amd/rzn53600
+2) https://catalog.onliner.by/motherboard/asus/tufb450progaming
+3) https://catalog.onliner.by/dram/gskill/f43600c16d16gvkc
+4) https://catalog.onliner.by/videocard/gigabyte/gvn166sgamingoc6
+5) https://catalog.onliner.by/ssd/crucial/ct1000p1ssd8
+6) https://catalog.onliner.by/powersupply/chieftec/pps650fc
+7) https://catalog.onliner.by/fan/pccooler/gix5r
+8) https://catalog.onliner.by/chassis/zalman/zalmanx3
+
+Итого: 2368р, ~69450₽, ~983$ на 31.05.2020
