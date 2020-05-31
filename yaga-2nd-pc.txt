@@ -1,15 +1,16 @@
-﻿1) Процессор Intel Core i7-8700K - 797р
-2) Материнская плата ASUS Prime Z370-A - 380р
-3) x4 Оперативная память HyperX Fury RGB 8GB - 106р (424р)
-4) Видеокарта Gigabyte AORUS GeForce RTX 2080 Super - 1757р
-5) SSD Samsung 970 Evo 500GB - 260р
-6) SSD Samsung 860 Evo 1TB - 299р
-7) Жесткий диск Seagate BarraCuda 2TB - 120р
-8) Wi-Fi адаптер TP-Link Archer T6E - 64р
-9) Блок питания Chieftec A-90 750W - 151р
-10) Кулер для процессора Thermaltake Contac Silent 12 - 62р
-11) x5 Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM - 45р (225р)
-12) Корпус Thermaltake Versa C23 версия с закаленным стеклом RGB - 167р
+﻿1) Процессор Intel Core i7-8700K - 913р
+2) Материнская плата ASUS Prime Z370-A - ~420р
+3) x4 Оперативная память HyperX Fury RGB 8GB - 130р (520р)
+4) Видеокарта Gigabyte AORUS GeForce RTX 2080 Super - 1989р
+5) SSD Samsung 970 Evo 500GB - 264р
+6) SSD Samsung 860 Evo 1TB - 365р
+7) Жесткий диск Seagate BarraCuda 2TB - 130р
+8) Wi-Fi адаптер TP-Link Archer T6E - 73р
+9) Bluetooth адаптер ASUS - 37р
+10) Блок питания Chieftec A-90 750W - 173р
+11) Система водяного охлаждения NZXT Kraken X53 - 364р
+12) x5 Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM - 52р (260р)
+13) Корпус Thermaltake Versa C23 версия с закаленным стеклом RGB - 211р
 
 1) https://catalog.onliner.by/cpu/intel/i78700k
 2) https://catalog.onliner.by/motherboard/asus/primez370a
@@ -19,9 +20,10 @@
 6) https://catalog.onliner.by/ssd/samsung/mz76e1t0bw
 7) https://catalog.onliner.by/hdd/seagate/st2000dm006
 8) https://catalog.onliner.by/wirelessadapter/tp_link/archert6e
-9) https://catalog.onliner.by/powersupply/chieftec/gdp750c
-10) https://catalog.onliner.by/fan/thermaltake/clp039al12bla
-11) https://catalog.onliner.by/fan/bequiet/bl066
-12) https://catalog.onliner.by/chassis/thermaltake/ca1h700m1wn00
+9) https://catalog.onliner.by/wirelessadapter/asus/usbbt400
+10) https://catalog.onliner.by/powersupply/chieftec/gdp750c
+11) https://catalog.onliner.by/fan/nzxt/rlkrx5301
+12) https://catalog.onliner.by/fan/bequiet/bl066
+13) https://catalog.onliner.by/chassis/thermaltake/ca1h700m1wn00
 
-Итого: 4706р, ~139614₽, ~2242$ на 23.12.2019
+Итого: 5719р, ~167730₽, ~2373$ на 31.05.2020
