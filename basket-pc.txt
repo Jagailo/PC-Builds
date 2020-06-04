@@ -1,0 +1,23 @@
+﻿1) Процессор AMD Ryzen 5 3600 - 406р
+2) Материнская плата Gigabyte B450 Aorus Elite (rev. 1.0) - 211р
+3) x2 Оперативная память Crucial Ballistix Sport LT 8GB - 96р (192р)
+4) Видеокарта Gigabyte GeForce GTX 1650 Super - 411р
+5) SSD Kingston A400 240GB - 78р
+6) Жесткий диск Seagate Barracuda 500GB - 86р
+7) Блок питания Chieftec Proton BDF-650C - 143р
+8) Кулер для процессора PCCooler GI-X6R - 55р
+9) x3 Вентилятор для корпуса Arctic F12 - 13р (39р)
+10) Корпус Zalman S2 - 70р
+
+1) https://catalog.onliner.by/cpu/amd/rzn53600
+2) https://catalog.onliner.by/motherboard/gigabyte/b450aoruselite
+3) https://catalog.onliner.by/dram/crucial/bls8g4d32aesbk
+4) https://catalog.onliner.by/videocard/gigabyte/gvn165swf2oc4gd
+5) https://catalog.onliner.by/ssd/kingston/sa400s37240g
+6) https://catalog.onliner.by/hdd/seagate/st500lm030
+7) https://catalog.onliner.by/powersupply/chieftec/protonbdf650c
+8) https://catalog.onliner.by/fan/pccooler/gix6r
+9) https://catalog.onliner.by/fan/arcticcooling/arcticf12
+10) https://catalog.onliner.by/chassis/zalman/zalmans2
+
+Итого: 1691р, ~49330₽, ~781$ на 06.02.2020
