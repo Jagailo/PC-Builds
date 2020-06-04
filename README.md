@@ -1,1 +1,1 @@
-### [Смотреть](https://jagailo.github.io/PC-Builds/index.html)
+# PC-Builds
