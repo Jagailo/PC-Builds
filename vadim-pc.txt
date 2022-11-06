@@ -1,0 +1,19 @@
+1) Процессор AMD Ryzen 5 5600G - 486р
+2) Материнская плата ASUS Prime B450-Plus - 366р
+3) Оперативная память Kingston FURY Beast 2x8GB - 216р
+4) Видеокарта Palit GeForce RTX 3060 Ti - 1499р
+5) SSD - ?
+6) Блок питания be quiet! System Power 9 700W - 214р
+7) Кулер для процессора DeepCool GAMMAXX 400 - 55р
+8) Корпус Zalman S2 TG - 143р
+
+1) https://catalog.onliner.by/cpu/amd/ryzen55600g
+2) https://catalog.onliner.by/motherboard/asus/primeb450plus
+3) https://catalog.onliner.by/dram/kingston/kf436c17bbk216
+4) https://catalog.onliner.by/videocard/palit/ne6306t019p2190v
+5) ?
+6) https://catalog.onliner.by/powersupply/bequiet/bn248
+7) https://catalog.onliner.by/fan/deepcool/dpmch4gmx400pbl
+8) https://catalog.onliner.by/chassis/zalman/zalmans2tg
+
+Итого: 2979р, ~74150₽, ~1194$ на 06.11.2022
