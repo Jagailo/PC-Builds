@@ -1,29 +1,53 @@
-﻿1) Процессор Intel Core i7-8700K - 913р
-2) Материнская плата ASUS Prime Z370-A - ~420р
-3) x4 Оперативная память HyperX Fury RGB 8GB - 130р (520р)
-4) Видеокарта Gigabyte AORUS GeForce RTX 2080 Super - 1989р
-5) SSD Samsung 970 Evo 500GB - 264р
-6) SSD Samsung 860 Evo 1TB - 365р
-7) Жесткий диск Seagate BarraCuda 2TB - 130р
-8) Wi-Fi адаптер TP-Link Archer T6E - 73р
-9) Bluetooth адаптер ASUS - 37р
-10) Блок питания Chieftec A-90 750W - 173р
-11) Система водяного охлаждения NZXT Kraken X53 - 364р
-12) x5 Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM - 52р (260р)
-13) Корпус Thermaltake Versa C23 версия с закаленным стеклом RGB - 211р
+Системный блок:
+ - Процессор Intel Core i7-8700K - $375 (06.08.2018)
+    https://catalog.onliner.by/cpu/intel/i78700k
+   
+ - Материнская плата ASUS Prime Z370-A - $182 (06.08.2018)
+    https://catalog.onliner.by/motherboard/asus/primez370a
+   
+ - [x2] Оперативная память HyperX Fury RGB 2x8GB - $201 (03.12.2019)
+    https://catalog.onliner.by/dram/hyperx/hx432c16fb3a8
 
-1) https://catalog.onliner.by/cpu/intel/i78700k
-2) https://catalog.onliner.by/motherboard/asus/primez370a
-3) https://catalog.onliner.by/dram/hyperx/hx432c16fb3a8
-4) https://catalog.onliner.by/videocard/gigabyte/gvn208saorus8gc
-5) https://catalog.onliner.by/ssd/samsung/mzv7e500bw
-6) https://catalog.onliner.by/ssd/samsung/mz76e1t0bw
-7) https://catalog.onliner.by/hdd/seagate/st2000dm006
-8) https://catalog.onliner.by/wirelessadapter/tp_link/archert6e
-9) https://catalog.onliner.by/wirelessadapter/asus/usbbt400
-10) https://catalog.onliner.by/powersupply/chieftec/gdp750c
-11) https://catalog.onliner.by/fan/nzxt/rlkrx5301
-12) https://catalog.onliner.by/fan/bequiet/bl066
-13) https://catalog.onliner.by/chassis/thermaltake/ca1h700m1wn00
+ - Видеокарта Gigabyte AORUS GeForce RTX 2080 Super - $851 (18.12.2019)
+    https://catalog.onliner.by/videocard/gigabyte/gvn208saorus8gc
+    
+ - SSD Samsung 970 Evo 500GB - $142 (08.01.2019)
+    https://catalog.onliner.by/ssd/samsung/mzv7e500bw
+ 
+ - SSD Samsung 860 Evo 1TB - $142 (29.12.2019)
+    https://catalog.onliner.by/ssd/samsung/mz76e1t0bw
+ 
+ - Жесткий диск Seagate BarraCuda 2TB - $65 (06.08.2018)
+    https://catalog.onliner.by/hdd/seagate/st2000dm006
+ 
+ - Wi-Fi/Bluetooth адаптер TP-Link Archer TX3000E - $70 (08.07.2022)
+    https://catalog.onliner.by/wirelessadapter/tp_link/archertx3000e
+ 
+ - Блок питания Chieftec A-90 750W - $83 (06.08.2018)
+    https://catalog.onliner.by/powersupply/chieftec/gdp750c
+ 
+ - Система водяного охлаждения NZXT Kraken X53 - $151 (28.05.2020)
+    https://catalog.onliner.by/fan/nzxt/rlkrx5301
+ 
+ - [x6] Вентилятор для корпуса be quiet! Silent Wings 3 ([x5] - $132 (08.01.2019), [x1] - $25 (05.07.2021))
+    https://catalog.onliner.by/fan/bequiet/bl066
+ 
+ - Корпус Phanteks Eclipse P500A - $152 (05.07.2021)
+    https://catalog.onliner.by/chassis/phanteks/eclipsp500adrgbw
+    
+ - GPU Riser Phanteks PR22 PR60 - $30 (23.06.2021)
+    https://aliexpress.ru/item/1005002313645493.html
 
-Итого: 5719р, ~167730₽, ~2373$ на 31.05.2020
+
+Периферия:
+ - Веб-камера Defender G-Lens - $55 (21.05.2020)
+    https://catalog.onliner.by/webcams/defender/defender293
+
+ - DVD привод HP - $22 (08.07.2020)
+    https://catalog.onliner.by/optical/hp/f2b56aa 
+
+ - USB-хаб 5bites HB34-307BK - $10 (08.01.2019)
+    https://catalog.onliner.by/usbhub/5bites/hb34307bk
+
+ - Карт-ридер Transcend TS-RDF5K - $8 (08.01.2019)
+    https://catalog.onliner.by/cardreaders/transcend/tsrdf5k
