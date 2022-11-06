@@ -1,4 +1,4 @@
-Системный блок:
+Компьютер:
  - Процессор Intel Core i7-8700K - $375 (06.08.2018)
     https://catalog.onliner.by/cpu/intel/i78700k
    
@@ -31,6 +31,9 @@
  
  - [x6] Вентилятор для корпуса be quiet! Silent Wings 3 ([x5] - $132 (08.01.2019), [x1] - $25 (05.07.2021))
     https://catalog.onliner.by/fan/bequiet/bl066
+
+ - Fan Hub Splitter LED SATA - 2$ (08.01.2019)
+    https://aliexpress.ru/item/32974829975.html
  
  - Корпус Phanteks Eclipse P500A - $152 (05.07.2021)
     https://catalog.onliner.by/chassis/phanteks/eclipsp500adrgbw
