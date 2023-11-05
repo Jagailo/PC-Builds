@@ -22,6 +22,9 @@
  - Жидкостное охлаждение для процессора NZXT Kraken 360 RGB White - 211 € (02.11.2023)
     https://www.computeruniverse.net/ru/p/90926058
 
+ - Корпус Phanteks Eclipse P500A - 160 € (06.11.2023)
+    https://catalog.onliner.by/chassis/phanteks/eclipsp500adrgbw
+
  - Wi-Fi/Bluetooth адаптер TP-Link Archer TX3000E ~ 47 € (06.11.2023)
     https://catalog.onliner.by/wirelessadapter/tp_link/archertx3000e
 
@@ -32,4 +35,4 @@
     https://catalog.onliner.by/fan/bequiet/bl097
 
 Итого:
- 3064 € с учётом инфляции евро на 06.11.2023
+ 3224 € с учётом инфляции евро на 06.11.2023
