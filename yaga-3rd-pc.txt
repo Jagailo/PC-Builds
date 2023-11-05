@@ -1,0 +1,35 @@
+ - Процессор AMD Ryzen 7 7800X3D (WOF) - 440 € (02.11.2023)
+    https://catalog.onliner.by/cpu/amd/ryzen77800x3dbox
+
+ - Материнская плата Gigabyte B650 Aorus Elite AX - 225 € (25.10.2023)
+    https://catalog.onliner.by/motherboard/gigabyte/b650aorelaxr1x
+
+ - Оперативная память G.Skill Trident Z5 RGB 2x32ГБ DDR5 6000МГц - 267 € (03.11.2023)
+    https://catalog.onliner.by/dram/gskill/60j3040g32gx2tzw
+
+ - Видеокарта Gigabyte Aorus GeForce RTX 4080 16GB Master - 1413 € (02.11.2023)
+    https://catalog.onliner.by/videocard/gigabyte/gvn4080aorusm16g
+
+ - [2x] SSD Samsung 980 Pro 1TB - 147 € (02.11.2023)
+    https://catalog.onliner.by/ssd/samsung/mzv8p1t0bw
+
+ - SSD Samsung 860 Evo 1TB ~ 85 € (06.11.2023)
+    https://catalog.onliner.by/ssd/samsung/mz76e1t0bw
+
+ - Блок питания be quiet! Pure Power 12 M 1000W - 145 € (02.11.2023)
+    https://catalog.onliner.by/powersupply/bequiet/bqbn345
+
+ - Жидкостное охлаждение для процессора NZXT Kraken 360 RGB White - 211 € (02.11.2023)
+    https://www.computeruniverse.net/ru/p/90926058
+
+ - Wi-Fi/Bluetooth адаптер TP-Link Archer TX3000E ~ 47 € (06.11.2023)
+    https://catalog.onliner.by/wirelessadapter/tp_link/archertx3000e
+
+ - [x3] Вентилятор для корпуса be quiet! Silent Wings 4 140mm PWM - 63 € (02.11.2023)
+    https://catalog.onliner.by/fan/bequiet/bl096
+
+ - Вентилятор для корпуса be quiet! Silent Wings 4 140mm PWM high-speed - 21 € (02.11.2023)
+    https://catalog.onliner.by/fan/bequiet/bl097
+
+Итого:
+ 3064 € с учётом инфляции евро на 06.11.2023
