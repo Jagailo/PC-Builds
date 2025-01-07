@@ -1,0 +1,125 @@
+{
+  "name": "ПК Юры",
+  "parts": [
+    {
+      "name": "Процессор AMD Ryzen 7 5700X3D",
+      "url": "https://catalog.onliner.by/cpu/amd/ryzen75700x3d",
+      "purchaseDate": "2024-09-10",
+      "price": 716.96,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата Gigabyte B450 Aorus Pro",
+      "url": "https://catalog.onliner.by/motherboard/gigabyte/b450aorusprorev1",
+      "purchaseDate": "2020-08-01",
+      "price": 300,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память G.Skill Aegis 8GB",
+      "url": "https://catalog.onliner.by/dram/gskill/f43200c16s8gis",
+      "purchaseDate": "2020-08-01",
+      "price": 95,
+      "currency": "BYN",
+      "amount": 2,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта Sapphire Pulse AMD Radeon RX 7700 XT",
+      "url": "https://catalog.onliner.by/videocard/sapphire/113350420g",
+      "purchaseDate": "2024-09-10",
+      "price": 1857.75,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 3,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 970 Evo Plus 500GB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mzv7s500bw",
+      "purchaseDate": "2020-08-01",
+      "price": 285,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 970 Evo Plus 500GB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mzv7s500bw",
+      "purchaseDate": "2020-08-01",
+      "price": 285,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 860 Evo 1TB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mz76e1t0bw",
+      "purchaseDate": "2020-08-01",
+      "price": 374,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Жесткий диск Seagate Barracuda 2TB",
+      "url": "https://catalog.onliner.by/hdd/seagate/st2000dm008",
+      "purchaseDate": "2020-08-01",
+      "price": 139,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 6,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания Chieftec Power Smart GPS-750C",
+      "url": "https://catalog.onliner.by/powersupply/chieftec/gps750c",
+      "purchaseDate": "2020-08-01",
+      "price": 261,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Кулер для процессора ID-Cooling SE-224-XTS",
+      "url": "https://catalog.onliner.by/fan/idcooling/se224xts",
+      "purchaseDate": "2024-09-10",
+      "price": 62.69,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 8,
+      "isUsed": false
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Pure Wings 2 120mm PWM",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl039",
+      "purchaseDate": "2024-09-10",
+      "price": 23,
+      "currency": "BYN",
+      "amount": 6,
+      "order": 9,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Zalman K1 rev. A",
+      "url": "https://catalog.onliner.by/chassis/zalman/zalmank1",
+      "purchaseDate": "2020-08-01",
+      "price": 151,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 10,
+      "isUsed": false
+    }
+  ]
+}
