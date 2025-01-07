@@ -2,155 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PC Parts</title>
+  <title>PC builds</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Standard favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <!-- Standard PNG favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon-128.png">
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- Standard PNG favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon-128.png">
 
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js"></script>
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1 class="mb-4">PC Parts</h1>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Order</th>
-                    <th>Name</th>
-                    <th>Purchase Date</th>
-                    <th>Price (BYN)</th>
-                    <th>Price (USD)</th>
-                    <th>Inflation-Adjusted Price (USD)</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
-                </tr>
-            </thead>
-            <tbody id="parts-table-body">
-                <!-- Data will be inserted here dynamically -->
-            </tbody>
-        </table>
-    </div>
+  <div class="container mt-5">
+    <h1 class="mb-4">Сборки</h1>
+    <ul class="list-group">
+      <li class="list-group-item"><a href="builds/yura.html">Сборка ПК Юры</a></li>
+    </ul>
+  </div>
 
-    <!-- Include Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const url = 'builds/yura.json'; // Insert your JSON file URL here
-            const currentYear = new Date().getFullYear();
-
-            // Prepare the payload for BLS API request
-            const blsPayload = {
-                "seriesid": ["CUUR0000SA0"],
-                "startyear": (currentYear - 10).toString(),
-                "endyear": currentYear.toString()
-            };
-
-            fetch('https://api.bls.gov/publicAPI/v1/timeseries/data/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(blsPayload)
-            })
-                .then(response => response.json())
-                .then(blsData => {
-                    if (blsData.status !== 'REQUEST_SUCCEEDED') {
-                        throw new Error('Failed to retrieve CPI data');
-                    }
-
-                    const cpiData = blsData.Results.series[0].data;
-                    const cpiLookup = {};
-
-                    // Convert CPI data into a more usable format
-                    cpiData.forEach(item => {
-                        cpiLookup[`${item.year}-${item.period}`] = parseFloat(item.value);
-                    });
-
-                    fetch(url)
-                        .then(response => response.json())
-                        .then(async (data) => {
-                            const parts = data.parts;
-                            const tableBody = document.getElementById('parts-table-body');
-                            parts.sort((a, b) => a.order - b.order);
-
-                            const exchangeRates = {}; // Cache for exchange rates
-
-                            // Function to fetch exchange rate for a given date
-                            async function fetchExchangeRate(date) {
-                                if (exchangeRates[date]) {
-                                    return exchangeRates[date];
-                                }
-
-                                try {
-                                    const response = await fetch(`https://api.nbrb.by/exrates/rates?periodicity=0&ondate=${date}`);
-                                    const rates = await response.json();
-                                    const usdRate = rates.find(rate => rate.Cur_Abbreviation === 'USD');
-                                    const rate = usdRate ? usdRate.Cur_OfficialRate : null;
-                                    exchangeRates[date] = rate;
-                                    return rate;
-                                } catch (error) {
-                                    console.error('Error fetching exchange rate:', error);
-                                    return null;
-                                }
-                            }
-
-                            function getInflationAdjustedPrice(usdPrice, purchaseDate) {
-                                const purchase = new Date(purchaseDate);
-                                const purchaseYear = purchase.getFullYear();
-                                const purchaseMonth = purchase.getMonth() + 1;
-
-                                // Find the relevant CPI value for purchase date
-                                let purchaseCPI = cpiLookup[`${purchaseYear}-M${String(purchaseMonth).padStart(2, '0')}`];
-                                if (!purchaseCPI) {
-                                    purchaseCPI = cpiData[cpiData.length - 1].value; // Use the oldest available CPI if earlier
-                                }
-
-                                // Use the latest CPI value
-                                const currentCPI = cpiData[0].value;
-
-                                // Calculate adjusted price
-                                const inflationFactor = currentCPI / purchaseCPI;
-                                return usdPrice * inflationFactor;
-                            }
-
-                            for (const part of parts) {
-                                const usdRate = await fetchExchangeRate(part.purchaseDate);
-                                const usdPrice = usdRate ? (part.price / usdRate).toFixed(2) : 'N/A';
-                                const inflationAdjustedPrice = usdRate ? getInflationAdjustedPrice(usdPrice, part.purchaseDate).toFixed(2) : 'N/A';
-
-                                const row = document.createElement('tr');
-                                row.innerHTML = `
-                                <td>${part.order}</td>
-                                <td><a href="${part.url}" target="_blank">${part.name}</a></td>
-                                <td>${part.purchaseDate}</td>
-                                <td>${part.price.toFixed(2)}</td>
-                                <td>${usdPrice}</td>
-                                <td>${inflationAdjustedPrice}</td>
-                                <td>${part.amount}</td>
-                                <td>${part.currency}</td>
-                            `;
-
-                                tableBody.appendChild(row);
-                            }
-                        })
-                        .catch(error => console.error('Error fetching the JSON data:', error));
-
-                })
-                .catch(err => console.error('Error fetching CPI data:', err));
-        });
-    </script>
 </body>
 
 </html>

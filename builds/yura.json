@@ -27,7 +27,7 @@
       "purchaseDate": "2020-08-01",
       "price": 95,
       "currency": "BYN",
-      "amount": 2,
+      "amount": 4,
       "order": 2,
       "isUsed": false
     },
@@ -39,16 +39,6 @@
       "currency": "BYN",
       "amount": 1,
       "order": 3,
-      "isUsed": false
-    },
-    {
-      "name": "SSD Samsung 970 Evo Plus 500GB",
-      "url": "https://catalog.onliner.by/ssd/samsung/mzv7s500bw",
-      "purchaseDate": "2020-08-01",
-      "price": 285,
-      "currency": "BYN",
-      "amount": 1,
-      "order": 4,
       "isUsed": false
     },
     {

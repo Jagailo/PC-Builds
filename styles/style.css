@@ -1,9 +1,10 @@
-.sale-icon {
+.svg-icon{
   display: inline-block;
-  width: 1em;   /* Scale with the font size of the parent element */
-  height: 1em;  /* Maintain the aspect ratio */
+  width: 1.4em;
+  height: 1.4em;
   vertical-align: middle;
   background: url('../assets/images/sale-icon.svg') no-repeat center;
   background-size: contain;
   filter: invert(42%) sepia(98%) saturate(2124%) hue-rotate(355deg) brightness(102%) contrast(101%);
+  margin: 0 5px;
 }
