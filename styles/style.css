@@ -1,4 +1,4 @@
-.svg-icon{
+.svg-icon {
   display: inline-block;
   width: 1.4em;
   height: 1.4em;
@@ -7,4 +7,13 @@
   background-size: contain;
   filter: invert(42%) sepia(98%) saturate(2124%) hue-rotate(355deg) brightness(102%) contrast(101%);
   margin: 0 5px;
+}
+
+.usd-price {
+  cursor: help;
+  border-bottom: 1px dotted #666;
+}
+
+.tooltip {
+  font-size: 12px;
 }
