@@ -1,0 +1,135 @@
+{
+  "name": "Третий ПК Яги",
+  "parts": [
+    {
+      "name": "Процессор AMD Ryzen 7 7800X3D",
+      "url": "https://catalog.onliner.by/cpu/amd/ryzen77800x3dbox",
+      "purchaseDate": "2023-11-02",
+      "price": 440,
+      "currency": "EUR",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата Gigabyte B650 Aorus Elite AX",
+      "url": "https://catalog.onliner.by/motherboard/gigabyte/b650aorelaxr1x",
+      "purchaseDate": "2023-10-20",
+      "price": 781.07,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память G.Skill Trident Z5 RGB 2x32ГБ DDR5 6000МГц",
+      "url": "https://catalog.onliner.by/dram/gskill/60j3040g32gx2tzw",
+      "purchaseDate": "2023-11-03",
+      "price": 906.70,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта Gigabyte Aorus GeForce RTX 4080 16GB Master",
+      "url": "https://catalog.onliner.by/videocard/gigabyte/gvn4080aorusm16g",
+      "purchaseDate": "2023-11-02",
+      "price": 1413,
+      "currency": "EUR",
+      "amount": 1,
+      "order": 3,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 980 Pro 1TB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mzv8p1t0bw",
+      "purchaseDate": "2023-11-02",
+      "price": 73.50,
+      "currency": "EUR",
+      "amount": 2,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 860 Evo 1TB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mz76e1t0bw",
+      "purchaseDate": "2019-12-23",
+      "price": 299.27,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания be quiet! Pure Power 12 M 1000W",
+      "url": "https://catalog.onliner.by/powersupply/bequiet/bqbn345",
+      "purchaseDate": "2023-11-02",
+      "price": 145,
+      "currency": "EUR",
+      "amount": 1,
+      "order": 6,
+      "isUsed": false
+    },
+    {
+      "name": "Система жидкостного охлаждения для процессора NZXT Kraken Elite 360 RGB",
+      "url": "https://catalog.onliner.by/fan/nzxt/rlkr36ew1",
+      "purchaseDate": "2023-11-02",
+      "price": 211,
+      "currency": "EUR",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Phanteks Eclipse P500A DRGB",
+      "url": "https://catalog.onliner.by/chassis/phanteks/eclipsp500adrgbw",
+      "purchaseDate": "2021-07-05",
+      "price": 385.14,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 8,
+      "isUsed": false
+    },
+    {
+      "name": "Wi-Fi/Bluetooth адаптер TP-Link Archer TX3000E",
+      "url": "https://catalog.onliner.by/wirelessadapter/tp_link/archertx3000e",
+      "purchaseDate": "2022-07-18",
+      "price": 179.40,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 9,
+      "isUsed": false
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Silent Wings 4 140mm PWM high-speed",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl097",
+      "purchaseDate": "2023-11-02",
+      "price": 21,
+      "currency": "EUR",
+      "amount": 1,
+      "order": 10,
+      "isUsed": false
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Silent Wings 4 140mm PWM",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl096",
+      "purchaseDate": "2023-11-02",
+      "price": 21,
+      "currency": "EUR",
+      "amount": 3,
+      "order": 11,
+      "isUsed": false
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Silent Wings 4 120mm PWM",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl093",
+      "purchaseDate": "2023-11-21",
+      "price": 92.25,
+      "currency": "EUR",
+      "amount": 3,
+      "order": 12,
+      "isUsed": false
+    }
+  ]
+}
