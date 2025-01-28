@@ -1,0 +1,95 @@
+{
+  "name": "ПК Димы",
+  "parts": [
+    {
+      "name": "Процессор Intel Core i5-8600K",
+      "url": "https://catalog.onliner.by/cpu/intel/i58600k",
+      "purchaseDate": "2018-02-09",
+      "price": 562,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата ASUS PRIME Z370-P",
+      "url": "https://catalog.onliner.by/motherboard/asus/primez370p",
+      "purchaseDate": "2018-02-09",
+      "price": 236,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память Crucial 8GB DDR4 PC4-19200",
+      "url": "https://catalog.onliner.by/dram/crucial/ct8g4dfd824a",
+      "purchaseDate": "2018-02-09",
+      "price": 180,
+      "currency": "BYN",
+      "amount": 2,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта Gigabyte GeForce GTX 1080 G1 Gaming 8GB",
+      "url": "https://catalog.onliner.by/videocard/gigabyte/gvn1080g1gaming8",
+      "purchaseDate": "2019-12-13",
+      "price": 700,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 3,
+      "isUsed": true
+    },
+    {
+      "name": "SSD Samsung 970 Evo Plus 500GB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mzv7s500bw",
+      "purchaseDate": "2019-11-23",
+      "price": 244,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "Жесткий диск Seagate BarraCuda 1TB",
+      "url": "https://catalog.onliner.by/hdd/seagate/st1000dm010",
+      "purchaseDate": "2018-02-09",
+      "price": 93,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания Chieftec A-80 CTG-750C 750W",
+      "url": "https://catalog.onliner.by/powersupply/chieftec/a80ctg750c750w",
+      "purchaseDate": "2018-02-09",
+      "price": 139,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 6,
+      "isUsed": false
+    },
+    {
+      "name": "Кулер для процессора DeepCool GAMMAXX 300",
+      "url": "https://catalog.onliner.by/fan/deepcool/gammaxx300",
+      "purchaseDate": "2018-02-09",
+      "price": 35,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Zalman Z3",
+      "url": "https://catalog.onliner.by/chassis/zalman/zalmanz3",
+      "purchaseDate": "2018-02-09",
+      "price": 81,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 8,
+      "isUsed": false
+    }
+  ]
+}
