@@ -1,0 +1,105 @@
+{
+  "name": "ПК Егора",
+  "parts": [
+    {
+      "name": "Процессор AMD Ryzen 5 3600",
+      "url": "https://catalog.onliner.by/cpu/amd/rzn53600",
+      "purchaseDate": "2020-05-31",
+      "price": 399,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата ASUS TUF B450-Pro Gaming",
+      "url": "https://catalog.onliner.by/motherboard/asus/tufb450progaming",
+      "purchaseDate": "2020-05-31",
+      "price": 280,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память HyperX Fury 2x8GB DDR4 PC4-28800",
+      "url": "https://catalog.onliner.by/dram/hyperx/hx436c17fb3k216",
+      "purchaseDate": "2020-05-31",
+      "price": 258,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта Gigabyte AORUS GeForce RTX 2080 Super 8G",
+      "url": "https://catalog.onliner.by/videocard/gigabyte/gvn208saorus8gc",
+      "purchaseDate": "2023-11-06",
+      "price": 350,
+      "currency": "USD",
+      "amount": 1,
+      "order": 3,
+      "isUsed": true
+    },
+    {
+      "name": "SSD Crucial P1 1TB",
+      "url": "https://catalog.onliner.by/ssd/crucial/ct1000p1ssd8",
+      "purchaseDate": "2020-05-31",
+      "price": 268,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания Chieftec Polaris PPS-650FC",
+      "url": "https://catalog.onliner.by/powersupply/chieftec/pps650fc",
+      "purchaseDate": "2020-05-31",
+      "price": 194,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Система жидкостного охлаждения для процессора NZXT Kraken X53",
+      "url": "https://catalog.onliner.by/fan/nzxt/rlkrx5301",
+      "purchaseDate": "2023-11-06",
+      "price": 130,
+      "currency": "USD",
+      "amount": 1,
+      "order": 6,
+      "isUsed": true
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Pure Wings 2 120mm PWM high-speed",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl081",
+      "purchaseDate": "2023-11-13",
+      "price": 39.99,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Pure Wings 2 120mm PWM",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl039",
+      "purchaseDate": "2023-11-13",
+      "price": 41.49,
+      "currency": "BYN",
+      "amount": 3,
+      "order": 8,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Zalman X3",
+      "url": "https://catalog.onliner.by/chassis/zalman/zalmanx3",
+      "purchaseDate": "2020-05-31",
+      "price": 221,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 9,
+      "isUsed": false
+    }
+  ]
+}
