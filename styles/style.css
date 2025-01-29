@@ -1,3 +1,53 @@
+body {
+  font-family: "Roboto";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #161C2D;
+  background: #F8F9FC;
+}
+
+a {
+  color: rgba(114, 124, 245, 1);
+  text-decoration: none;
+}
+
+.logo-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #161C2D;
+  cursor: pointer;
+}
+
+.white-box {
+  padding: 1.5rem;
+  box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, .15);
+  background: #FFFFFF;
+  border-radius: .25rem;
+}
+
+/* --- Table ---------------------------------------------------------- */
+
+thead th {
+  color: #313a46 !important;
+  background-color: #eef2f7 !important;
+  border-color: rgb(219.1, 223.6, 229.3);
+}
+
+tfoot td {
+  border-bottom: none;
+}
+
+.table>:not(caption)>*>* {
+  padding: .85rem;
+  color: #6C757D;
+  border-bottom-color: rgb(222, 226, 230);
+  font-size: 14px;
+}
+
+/* --- Other ---------------------------------------------------------- */
+
 .svg-icon {
   display: inline-block;
   width: 1.4em;

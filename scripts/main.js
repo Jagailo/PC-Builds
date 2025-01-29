@@ -142,12 +142,12 @@ async function renderBuild(jsonUrl) {
       row.innerHTML = `
         <td>${nameContent}</td>
         <td class="text-center">${printLocalDate(part.purchaseDate)}</td>
-        <td>
+        <td class="text-center">
           ${formatPrice(part)} 
           <span class="usd-price" data-toggle="tooltip" data-placement="top" title="${currentBYNPrice} р.">($${usdPrice.toFixed(2)})</span>
         </td>
         <td class="text-center">${part.amount}</td>
-        <td>$${totalUSDPrice}</td>
+        <td class="text-center">$${totalUSDPrice}</td>
       `;
       tableBody.appendChild(row);
     }
@@ -158,7 +158,7 @@ async function renderBuild(jsonUrl) {
   totalBuildCostElement.innerHTML = `
     <tr>
       <td colspan="4" class="text-right"><strong>Итого:</strong></td>
-      <td><strong><span class="usd-price" data-toggle="tooltip" data-placement="top" title="${totalBYNPrice} р.">$${totalBuildCostUSD.toFixed(2)}</span></strong></td>
+      <td class="text-center"><strong><span class="usd-price" data-toggle="tooltip" data-placement="top" title="${totalBYNPrice} р.">$${totalBuildCostUSD.toFixed(2)}</span></strong></td>
     </tr>
   `;
 }
