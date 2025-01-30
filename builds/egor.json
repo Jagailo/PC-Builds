@@ -5,7 +5,7 @@
       "name": "Процессор AMD Ryzen 5 3600",
       "url": "https://catalog.onliner.by/cpu/amd/rzn53600",
       "purchaseDate": "2020-05-31",
-      "price": 399,
+      "price": 417.81,
       "currency": "BYN",
       "amount": 1,
       "order": 0,
@@ -15,17 +15,17 @@
       "name": "Материнская плата ASUS TUF B450-Pro Gaming",
       "url": "https://catalog.onliner.by/motherboard/asus/tufb450progaming",
       "purchaseDate": "2020-05-31",
-      "price": 280,
+      "price": 279.14,
       "currency": "BYN",
       "amount": 1,
       "order": 1,
       "isUsed": false
     },
     {
-      "name": "Оперативная память HyperX Fury 2x8GB DDR4 PC4-28800",
-      "url": "https://catalog.onliner.by/dram/hyperx/hx436c17fb3k216",
-      "purchaseDate": "2020-05-31",
-      "price": 258,
+      "name": "Оперативная память Kingston FURY Renegade 2x16GB DDR4 PC4-28800",
+      "url": "https://catalog.onliner.by/dram/kingston/kingkf436c16rb1k",
+      "purchaseDate": "2023-05-02",
+      "price": 346.80,
       "currency": "BYN",
       "amount": 1,
       "order": 2,
@@ -42,23 +42,33 @@
       "isUsed": true
     },
     {
-      "name": "SSD Crucial P1 1TB",
-      "url": "https://catalog.onliner.by/ssd/crucial/ct1000p1ssd8",
-      "purchaseDate": "2020-05-31",
-      "price": 268,
+      "name": "SSD Samsung 870 Evo 1TB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mz77e1t0bw",
+      "purchaseDate": "2021-05-03",
+      "price": 344.43,
       "currency": "BYN",
       "amount": 1,
       "order": 4,
       "isUsed": false
     },
     {
-      "name": "Блок питания Chieftec Polaris PPS-650FC",
-      "url": "https://catalog.onliner.by/powersupply/chieftec/pps650fc",
+      "name": "SSD Crucial P1 1TB",
+      "url": "https://catalog.onliner.by/ssd/crucial/ct1000p1ssd8",
       "purchaseDate": "2020-05-31",
-      "price": 194,
+      "price": 267.62,
       "currency": "BYN",
       "amount": 1,
       "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания Chieftec Polaris PPS-650FC",
+      "url": "https://catalog.onliner.by/powersupply/chieftec/pps650fc",
+      "purchaseDate": "2020-05-31",
+      "price": 194.02,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 6,
       "isUsed": false
     },
     {
@@ -68,7 +78,7 @@
       "price": 130,
       "currency": "USD",
       "amount": 1,
-      "order": 6,
+      "order": 7,
       "isUsed": true
     },
     {
@@ -78,27 +88,27 @@
       "price": 39.99,
       "currency": "BYN",
       "amount": 1,
-      "order": 7,
+      "order": 8,
       "isUsed": false
     },
     {
       "name": "Вентилятор для корпуса be quiet! Pure Wings 2 120mm PWM",
       "url": "https://catalog.onliner.by/fan/bequiet/bl039",
       "purchaseDate": "2023-11-13",
-      "price": 41.49,
+      "price": 41.53,
       "currency": "BYN",
       "amount": 3,
-      "order": 8,
+      "order": 9,
       "isUsed": false
     },
     {
       "name": "Корпус Zalman X3",
       "url": "https://catalog.onliner.by/chassis/zalman/zalmanx3",
       "purchaseDate": "2020-05-31",
-      "price": 221,
+      "price": 222.95,
       "currency": "BYN",
       "amount": 1,
-      "order": 9,
+      "order": 10,
       "isUsed": false
     }
   ]
