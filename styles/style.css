@@ -46,6 +46,24 @@ tfoot td {
   font-size: 14px;
 }
 
+/* --- Tooltip -------------------------------------------------------- */
+
+.tooltip {
+  opacity: 1 !important;
+}
+
+.tooltip-inner {
+  background-color: #6C757D;
+  color: #FAFBFE;
+  border-radius: .25rem;
+  font-size: 12px;
+}
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #6C757D;
+}
+
 /* --- Other ---------------------------------------------------------- */
 
 .svg-icon {
@@ -61,9 +79,5 @@ tfoot td {
 
 .usd-price {
   cursor: help;
-  border-bottom: 1px dotted #666;
-}
-
-.tooltip {
-  font-size: 12px;
+  border-bottom: 1px dotted #6C757D;
 }

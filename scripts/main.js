@@ -135,7 +135,7 @@ async function renderBuild(jsonUrl) {
 
       let nameContent = `<a href="${part.url}" target="_blank">${part.name}</a>`;
       if (part.isUsed) {
-        nameContent += `<span class="svg-icon" data-toggle="tooltip" data-placement="top" title="Бывший в употреблении"></span>`;
+        nameContent += `<span class="svg-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Бывший в употреблении"></span>`;
       }
 
       const row = document.createElement('tr');
@@ -143,8 +143,10 @@ async function renderBuild(jsonUrl) {
         <td>${nameContent}</td>
         <td class="text-center">${printLocalDate(part.purchaseDate)}</td>
         <td class="text-center">
-          ${formatPrice(part)} 
-          <span class="usd-price" data-toggle="tooltip" data-placement="top" title="${currentBYNPrice} р.">($${usdPrice.toFixed(2)})</span>
+          ${part.currency === 'USD'
+                ? `<span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">${formatPrice(part)}</span>`
+                : `${formatPrice(part)} <span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">($${usdPrice.toFixed(2)})</span>`
+              }
         </td>
         <td class="text-center">${part.amount}</td>
         <td class="text-center">$${totalUSDPrice}</td>
@@ -158,8 +160,14 @@ async function renderBuild(jsonUrl) {
   totalBuildCostElement.innerHTML = `
     <tr>
       <td colspan="4" class="text-right"><strong>Итого:</strong></td>
-      <td class="text-center"><strong><span class="usd-price" data-toggle="tooltip" data-placement="top" title="${totalBYNPrice} р.">$${totalBuildCostUSD.toFixed(2)}</span></strong></td>
+      <td class="text-center"><strong><span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${totalBYNPrice} р.">$${totalBuildCostUSD.toFixed(2)}</span></strong></td>
     </tr>
   `;
+
+  initializeTooltips();
 }
 
+function initializeTooltips() {
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+}
