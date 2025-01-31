@@ -1,0 +1,115 @@
+{
+  "name": "ПК Ромы",
+  "parts": [
+    {
+      "name": "Процессор AMD Ryzen 5 3600",
+      "url": "https://catalog.onliner.by/cpu/amd/rzn53600",
+      "purchaseDate": "2024-09-12",
+      "price": 200,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 0,
+      "isUsed": true
+    },
+    {
+      "name": "Материнская плата ASRock B450M-HDV R4.0",
+      "url": "https://catalog.onliner.by/motherboard/asrock/b450mhdvr40",
+      "purchaseDate": "2024-09-12",
+      "price": 209.26,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память G.Skill Aegis 2x8GB DDR4 PC4-25600",
+      "url": "https://catalog.onliner.by/dram/gskill/f43200c16d16gis",
+      "purchaseDate": "2024-09-12",
+      "price": 109.80,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта Palit GeForce GTX 1050 Ti Dual OC 4GB",
+      "url": "https://catalog.onliner.by/videocard/palit/ne5105ts18g11071",
+      "purchaseDate": "2024-09-14",
+      "price": 70,
+      "currency": "USD",
+      "amount": 1,
+      "order": 3,
+      "isUsed": true
+    },
+    {
+      "name": "SSD Kingston A400 480GB",
+      "url": "https://catalog.onliner.by/ssd/kingston/sa400s37480g",
+      "purchaseDate": "2024-09-15",
+      "price": 128.36,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "Жесткий диск Toshiba DT01ACA 1TB",
+      "url": "https://catalog.onliner.by/hdd/toshiba/dt01aca100",
+      "purchaseDate": "2024-09-14",
+      "price": 80,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": true
+    },
+    {
+      "name": "Блок питания Zalman ZM600-LE 600W",
+      "url": "https://catalog.onliner.by/powersupply/zalman/zm600le",
+      "purchaseDate": "2024-09-14",
+      "price": 90,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 6,
+      "isUsed": true
+    },
+    {
+      "name": "Кулер для процессора Thermaltake Contac Silent 12",
+      "url": "https://catalog.onliner.by/fan/thermaltake/clp039al12bla",
+      "purchaseDate": "2024-09-12",
+      "price": 20,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": true
+    },
+    {
+      "name": "Вентилятор для корпуса Zalman ZM-RFD120A",
+      "url": "https://catalog.onliner.by/fan/zalman/zmrfd120a",
+      "purchaseDate": "2024-09-14",
+      "price": 5,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 8,
+      "isUsed": true
+    },
+    {
+      "name": "Оптический привод LG GH24NSC0",
+      "url": "https://catalog.onliner.by/optical/lg/gh24nsc0",
+      "purchaseDate": "2024-09-14",
+      "price": 0,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 9,
+      "isUsed": true
+    },
+    {
+      "name": "Корпус Zalman Z3 Plus",
+      "url": "https://catalog.onliner.by/chassis/zalman/z3plus",
+      "purchaseDate": "2024-09-14",
+      "price": 50,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 10,
+      "isUsed": true
+    }
+  ]
+}
