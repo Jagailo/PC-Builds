@@ -73,7 +73,7 @@ tfoot td {
   vertical-align: middle;
   background: url('../assets/images/sale-icon.svg') no-repeat center;
   background-size: contain;
-  filter: invert(42%) sepia(98%) saturate(2124%) hue-rotate(355deg) brightness(102%) contrast(101%);
+  filter: invert(48%) sepia(96%) saturate(1010%) hue-rotate(213deg) brightness(101%) contrast(94%);
   margin: -1px 0 0 7px;
 }
 
