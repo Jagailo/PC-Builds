@@ -30,8 +30,8 @@ a {
 /* --- Table ---------------------------------------------------------- */
 
 thead th {
-  color: #313a46 !important;
-  background-color: #eef2f7 !important;
+  color: #313A46 !important;
+  background-color: #EEF2F7 !important;
   border-color: rgb(219.1, 223.6, 229.3);
 }
 
@@ -68,13 +68,13 @@ tfoot td {
 
 .svg-icon {
   display: inline-block;
-  width: 1.4em;
-  height: 1.4em;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   background: url('../assets/images/sale-icon.svg') no-repeat center;
   background-size: contain;
   filter: invert(42%) sepia(98%) saturate(2124%) hue-rotate(355deg) brightness(102%) contrast(101%);
-  margin: 0 5px;
+  margin: -1px 0 0 7px;
 }
 
 .usd-price {

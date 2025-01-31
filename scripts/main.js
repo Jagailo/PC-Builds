@@ -69,8 +69,11 @@ function printLocalDate(dateString) {
 }
 
 function formatPrice(item) {
-  let formattedPrice = '';
+  if (item.price === 0) {
+    return "0";
+  }
 
+  let formattedPrice = '';
   switch (item.currency) {
     case 'BYN':
       formattedPrice = item.price.toFixed(2) + ' р.';
@@ -139,18 +142,28 @@ async function renderBuild(jsonUrl) {
       }
 
       const row = document.createElement('tr');
+      const priceCell = part.price === 0
+        ? `<td class="text-center">0</td>`
+        : `<td class="text-center">
+            ${part.currency === 'USD'
+          ? `<span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">${formatPrice(part)}</span>`
+          : `${formatPrice(part)} <span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">($${usdPrice.toFixed(2)})</span>`
+        }
+          </td>`;
+
+      const amountCell = `<td class="text-center">${part.amount}</td>`;
+      const totalCell = part.price === 0
+        ? `<td class="text-center">0</td>`
+        : `<td class="text-center">$${totalUSDPrice}</td>`;
+
       row.innerHTML = `
         <td>${nameContent}</td>
         <td class="text-center">${printLocalDate(part.purchaseDate)}</td>
-        <td class="text-center">
-          ${part.currency === 'USD'
-                ? `<span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">${formatPrice(part)}</span>`
-                : `${formatPrice(part)} <span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">($${usdPrice.toFixed(2)})</span>`
-              }
-        </td>
-        <td class="text-center">${part.amount}</td>
-        <td class="text-center">$${totalUSDPrice}</td>
+        ${priceCell}
+        ${amountCell}
+        ${totalCell}
       `;
+
       tableBody.appendChild(row);
     }
   }
