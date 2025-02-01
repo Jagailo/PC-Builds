@@ -105,20 +105,10 @@
       "name": "Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM",
       "url": "https://catalog.onliner.by/fan/bequiet/bl066",
       "purchaseDate": "2019-01-18",
-      "price": 57.20,
+      "price": 56.59,
       "currency": "BYN",
-      "amount": 5,
+      "amount": 6,
       "order": 10,
-      "isUsed": false
-    },
-    {
-      "name": "Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM",
-      "url": "https://catalog.onliner.by/fan/bequiet/bl066",
-      "purchaseDate": "2021-07-05",
-      "price": 63.14,
-      "currency": "BYN",
-      "amount": 1,
-      "order": 11,
       "isUsed": false
     },
     {
@@ -128,7 +118,7 @@
       "price": 385.14,
       "currency": "BYN",
       "amount": 1,
-      "order": 12,
+      "order": 11,
       "isUsed": false
     },
     {
@@ -138,7 +128,7 @@
       "price": 30,
       "currency": "USD",
       "amount": 1,
-      "order": 13,
+      "order": 12,
       "isUsed": false
     }
   ]
