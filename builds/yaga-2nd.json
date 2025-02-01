@@ -1,0 +1,145 @@
+{
+  "name": "Второй ПК Яги",
+  "parts": [
+    {
+      "name": "Процессор Intel Core i7-8700K",
+      "url": "https://catalog.onliner.by/cpu/intel/i78700k",
+      "purchaseDate": "2018-08-06",
+      "price": 755.76,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата ASUS Prime Z370-A",
+      "url": "https://catalog.onliner.by/motherboard/asus/primez370a",
+      "purchaseDate": "2018-08-06",
+      "price": 366.44,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память HyperX Fury RGB 2x8GB DDR4 PC4-25600",
+      "url": "https://catalog.onliner.by/dram/hyperx/hx432c16fb3ak216",
+      "purchaseDate": "2019-12-03",
+      "price": 366.44,
+      "currency": "BYN",
+      "amount": 2,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта Gigabyte AORUS GeForce RTX 2080 Super 8G",
+      "url": "https://catalog.onliner.by/videocard/gigabyte/gvn208saorus8gc",
+      "purchaseDate": "2019-12-12",
+      "price": 1789.20,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 3,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 970 Evo 500GB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mzv7e500bw",
+      "purchaseDate": "2019-01-18",
+      "price": 308.33,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 860 Evo 1TB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mz76e1t0bw",
+      "purchaseDate": "2019-12-23",
+      "price": 299.27,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Жесткий диск Seagate BarraCuda 2TB",
+      "url": "https://catalog.onliner.by/hdd/seagate/st2000dm006",
+      "purchaseDate": "2018-08-06",
+      "price": 130.94,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 6,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания Chieftec A-90 750W",
+      "url": "https://catalog.onliner.by/powersupply/chieftec/gdp750c",
+      "purchaseDate": "2018-08-06",
+      "price": 166.64,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Wi-Fi/Bluetooth адаптер TP-Link Archer TX3000E",
+      "url": "https://catalog.onliner.by/wirelessadapter/tp_link/archertx3000e",
+      "purchaseDate": "2022-07-18",
+      "price": 179.40,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 8,
+      "isUsed": false
+    },
+    {
+      "name": "Система жидкостного охлаждения для процессора NZXT Kraken X53",
+      "url": "https://catalog.onliner.by/fan/nzxt/rlkrx5301",
+      "purchaseDate": "2020-05-28",
+      "price": 364,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 9,
+      "isUsed": false
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl066",
+      "purchaseDate": "2019-01-18",
+      "price": 57.20,
+      "currency": "BYN",
+      "amount": 5,
+      "order": 10,
+      "isUsed": false
+    },
+    {
+      "name": "Вентилятор для корпуса be quiet! Silent Wings 3 120mm PWM",
+      "url": "https://catalog.onliner.by/fan/bequiet/bl066",
+      "purchaseDate": "2021-07-05",
+      "price": 63.14,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 11,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Phanteks Eclipse P500A DRGB",
+      "url": "https://catalog.onliner.by/chassis/phanteks/eclipsp500adrgbw",
+      "purchaseDate": "2021-07-05",
+      "price": 385.14,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 12,
+      "isUsed": false
+    },
+    {
+      "name": "GPU Riser Phanteks PR22 PR60",
+      "url": "https://aliexpress.ru/item/1005002313645493.html",
+      "purchaseDate": "2021-06-23",
+      "price": 30,
+      "currency": "USD",
+      "amount": 1,
+      "order": 13,
+      "isUsed": false
+    }
+  ]
+}
