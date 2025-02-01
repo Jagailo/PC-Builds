@@ -72,33 +72,23 @@
       "isUsed": false
     },
     {
-      "name": "Система жидкостного охлаждения для процессора NZXT Kraken Elite 360 RGB",
-      "url": "https://catalog.onliner.by/fan/nzxt/rlkr36ew1",
-      "purchaseDate": "2023-11-02",
-      "price": 211,
-      "currency": "EUR",
-      "amount": 1,
-      "order": 7,
-      "isUsed": false
-    },
-    {
-      "name": "Корпус Phanteks Eclipse P500A DRGB",
-      "url": "https://catalog.onliner.by/chassis/phanteks/eclipsp500adrgbw",
-      "purchaseDate": "2021-07-05",
-      "price": 385.14,
-      "currency": "BYN",
-      "amount": 1,
-      "order": 8,
-      "isUsed": false
-    },
-    {
       "name": "Wi-Fi/Bluetooth адаптер TP-Link Archer TX3000E",
       "url": "https://catalog.onliner.by/wirelessadapter/tp_link/archertx3000e",
       "purchaseDate": "2022-07-18",
       "price": 179.40,
       "currency": "BYN",
       "amount": 1,
-      "order": 9,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Система жидкостного охлаждения для процессора NZXT Kraken Elite 360 RGB",
+      "url": "https://catalog.onliner.by/fan/nzxt/rlkr36ew1",
+      "purchaseDate": "2023-11-02",
+      "price": 211,
+      "currency": "EUR",
+      "amount": 1,
+      "order": 8,
       "isUsed": false
     },
     {
@@ -108,7 +98,7 @@
       "price": 21,
       "currency": "EUR",
       "amount": 1,
-      "order": 10,
+      "order": 9,
       "isUsed": false
     },
     {
@@ -118,7 +108,7 @@
       "price": 21,
       "currency": "EUR",
       "amount": 3,
-      "order": 11,
+      "order": 10,
       "isUsed": false
     },
     {
@@ -128,6 +118,16 @@
       "price": 92.25,
       "currency": "BYN",
       "amount": 3,
+      "order": 11,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Phanteks Eclipse P500A DRGB",
+      "url": "https://catalog.onliner.by/chassis/phanteks/eclipsp500adrgbw",
+      "purchaseDate": "2021-07-05",
+      "price": 385.14,
+      "currency": "BYN",
+      "amount": 1,
       "order": 12,
       "isUsed": false
     }

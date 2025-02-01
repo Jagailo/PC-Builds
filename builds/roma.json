@@ -35,7 +35,7 @@
       "name": "Видеокарта Palit GeForce GTX 1050 Ti Dual OC 4GB",
       "url": "https://catalog.onliner.by/videocard/palit/ne5105ts18g11071",
       "purchaseDate": "2024-09-14",
-      "price": 70,
+      "price": 80,
       "currency": "USD",
       "amount": 1,
       "order": 3,
@@ -72,13 +72,23 @@
       "isUsed": true
     },
     {
+      "name": "Оптический привод LG GH24NSC0",
+      "url": "https://catalog.onliner.by/optical/lg/gh24nsc0",
+      "purchaseDate": "2024-09-14",
+      "price": 0,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": true
+    },
+    {
       "name": "Кулер для процессора Thermaltake Contac Silent 12",
       "url": "https://catalog.onliner.by/fan/thermaltake/clp039al12bla",
       "purchaseDate": "2024-09-12",
       "price": 20,
       "currency": "BYN",
       "amount": 1,
-      "order": 7,
+      "order": 8,
       "isUsed": true
     },
     {
@@ -86,16 +96,6 @@
       "url": "https://catalog.onliner.by/fan/zalman/zmrfd120a",
       "purchaseDate": "2024-09-14",
       "price": 5,
-      "currency": "BYN",
-      "amount": 1,
-      "order": 8,
-      "isUsed": true
-    },
-    {
-      "name": "Оптический привод LG GH24NSC0",
-      "url": "https://catalog.onliner.by/optical/lg/gh24nsc0",
-      "purchaseDate": "2024-09-14",
-      "price": 0,
       "currency": "BYN",
       "amount": 1,
       "order": 9,

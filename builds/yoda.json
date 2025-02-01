@@ -1,0 +1,95 @@
+{
+  "name": "ПК Йоды",
+  "parts": [
+    {
+      "name": "Процессор Intel Core i3-10105F",
+      "url": "https://catalog.onliner.by/cpu/intel/i310105f",
+      "purchaseDate": "2022-03-13",
+      "price": 226,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата Gigabyte H510M H",
+      "url": "https://catalog.onliner.by/motherboard/gigabyte/gh510mh",
+      "purchaseDate": "2022-03-13",
+      "price": 198,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память G.Skill Value 2x8GB DDR4 PC4-21300",
+      "url": "https://catalog.onliner.by/dram/gskill/f42666c19d16gnt",
+      "purchaseDate": "2022-03-13",
+      "price": 165,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта XFX Speedster SWFT 210 Radeon RX 6600 Core 8GB",
+      "url": "https://catalog.onliner.by/videocard/xfx/rx66xl8lfdq08g",
+      "purchaseDate": "2022-03-13",
+      "price": 1617,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 3,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Apacer AS2280P4 256GB",
+      "url": "https://catalog.onliner.by/ssd/apacer/ap256gas2280p41",
+      "purchaseDate": "2022-03-13",
+      "price": 95,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "Жесткий диск Seagate BarraCuda 1TB",
+      "url": "https://catalog.onliner.by/hdd/seagate/st1000dm010",
+      "purchaseDate": "2022-03-13",
+      "price": 101,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания be quiet! System Power 9 600W",
+      "url": "https://catalog.onliner.by/powersupply/bequiet/bn247",
+      "purchaseDate": "2022-03-13",
+      "price": 156,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 6,
+      "isUsed": false
+    },
+    {
+      "name": "Кулер для процессора DeepCool GAMMAXX 300 R",
+      "url": "https://catalog.onliner.by/fan/deepcool/gammaxx300r",
+      "purchaseDate": "2022-03-13",
+      "price": 40,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус GameMax Aero Mini Eco",
+      "url": "https://catalog.onliner.by/chassis/gamemax/aerominieco",
+      "purchaseDate": "2022-03-13",
+      "price": 116,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 8,
+      "isUsed": false
+    }
+  ]
+}
