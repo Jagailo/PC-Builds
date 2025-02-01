@@ -1,6 +1,115 @@
 {
   "name": "Первый ПК Яги",
   "parts": [
-    
+    {
+      "name": "Процессор Intel Core i5-4670K",
+      "url": "https://catalog.onliner.by/cpu/intel/corei54670k",
+      "purchaseDate": "2014-09-02",
+      "price": 240,
+      "currency": "USD",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата ASUS Z87-PLUS",
+      "url": "https://catalog.onliner.by/motherboard/asus/z87plus",
+      "purchaseDate": "2014-09-02",
+      "price": 150,
+      "currency": "USD",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память NCP 8GB DDR3 PC3-12800",
+      "url": "https://catalog.onliner.by/dram/ncp/ncph10audr16m28",
+      "purchaseDate": "2014-09-02",
+      "price": 80,
+      "currency": "USD",
+      "amount": 2,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "Видеокарта Gigabyte GeForce GTX 980 WindForce 3 OC 4GB",
+      "url": "https://catalog.onliner.by/videocard/gigabyte/gvn980wf3oc4gd",
+      "purchaseDate": "2015-11-11",
+      "price": 550,
+      "currency": "USD",
+      "amount": 1,
+      "order": 3,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 850 Evo 500GB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mz75e500bw",
+      "purchaseDate": "2015-11-11",
+      "price": 170,
+      "currency": "USD",
+      "amount": 1,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "Жесткий диск Seagate Barracuda 7200.14 2000GB",
+      "url": "https://catalog.onliner.by/hdd/seagate/sg_barrst2000dm0",
+      "purchaseDate": "2014-09-02",
+      "price": 90,
+      "currency": "USD",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания Chieftec A-80 750W",
+      "url": "https://catalog.onliner.by/powersupply/chieftec/a80ctg750c750w",
+      "purchaseDate": "2014-09-02",
+      "price": 85,
+      "currency": "USD",
+      "amount": 1,
+      "order": 6,
+      "isUsed": false
+    },
+    {
+      "name": "Wi-Fi адаптер TP-Link TL-WN781ND",
+      "url": "https://catalog.onliner.by/wirelessadapter/tp_link/tptlwn781nd",
+      "purchaseDate": "2015-11-11",
+      "price": 15,
+      "currency": "USD",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    },
+    {
+      "name": "Оптический привод Lite-On",
+      "url": "https://catalog.onliner.by/optical/liteon/liteonihas12214",
+      "purchaseDate": "2014-09-02",
+      "price": 20,
+      "currency": "USD",
+      "amount": 1,
+      "order": 8,
+      "isUsed": false
+    },
+    {
+      "name": "Кулер для процессора DeepCool GAMMAXX S40",
+      "url": "https://catalog.onliner.by/fan/deepcool/dc_gammaxxs40",
+      "purchaseDate": "2014-09-02",
+      "price": 30,
+      "currency": "USD",
+      "amount": 1,
+      "order": 9,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Zalman Z3 Plus",
+      "url": "https://catalog.onliner.by/chassis/zalman/z3plus",
+      "purchaseDate": "2014-09-02",
+      "price": 45,
+      "currency": "USD",
+      "amount": 1,
+      "order": 10,
+      "isUsed": false
+    }
   ]
 }
