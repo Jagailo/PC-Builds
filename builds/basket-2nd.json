@@ -1,0 +1,75 @@
+{
+  "name": "Второй ПК Баскета",
+  "parts": [
+    {
+      "name": "Процессор AMD Ryzen 7 7700",
+      "url": "https://catalog.onliner.by/cpu/amd/ryzen77700",
+      "purchaseDate": "2025-04-17",
+      "price": 705.01,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 0,
+      "isUsed": false
+    },
+    {
+      "name": "Материнская плата Gigabyte B650 Gaming X AX V2",
+      "url": "https://catalog.onliner.by/motherboard/gigabyte/b650gamgxaxv2r1x",
+      "purchaseDate": "2025-04-17",
+      "price": 702.27,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 1,
+      "isUsed": false
+    },
+    {
+      "name": "Оперативная память Team T-Create Expert 2x16ГБ DDR5 6000 МГц",
+      "url": "https://catalog.onliner.by/dram/team/ctcwd532g6000hc3",
+      "purchaseDate": "2025-04-17",
+      "price": 367.13,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 2,
+      "isUsed": false
+    },
+    {
+      "name": "SSD Samsung 980 1TB",
+      "url": "https://catalog.onliner.by/ssd/samsung/mzv8v1t0bw",
+      "purchaseDate": "2025-04-17",
+      "price": 311.36,
+      "currency": "BYN",
+      "amount": 2,
+      "order": 4,
+      "isUsed": false
+    },
+    {
+      "name": "Блок питания Chieftec Chieftronic PowerUp GPX-850FC",
+      "url": "https://catalog.onliner.by/powersupply/chieftec/gpx850fc",
+      "purchaseDate": "2025-04-17",
+      "price": 354.28,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 5,
+      "isUsed": false
+    },
+    {
+      "name": "Система жидкостного охлаждения для процессора ID-Cooling FrostFlow FX360 Pro White",
+      "url": "https://catalog.onliner.by/fan/idcooling/fx360prowh",
+      "purchaseDate": "2025-04-17",
+      "price": 158.19,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 6,
+      "isUsed": false
+    },
+    {
+      "name": "Корпус Phanteks XT Pro Ultra",
+      "url": "https://catalog.onliner.by/chassis/phanteks/phxt523p1dwt01r",
+      "purchaseDate": "2025-04-17",
+      "price": 287.02,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 7,
+      "isUsed": false
+    }
+  ]
+}
