@@ -32,6 +32,16 @@
       "isUsed": false
     },
     {
+      "name": "Видеокарта Gigabyte GeForce RTX 4060 Eagle OC 8G",
+      "url": "https://catalog.onliner.by/videocard/gigabyte/gvn4060eagleoc8g",
+      "purchaseDate": "2025-05-16",
+      "price": 1340,
+      "currency": "BYN",
+      "amount": 1,
+      "order": 3,
+      "isUsed": false
+    },
+    {
       "name": "SSD Samsung 980 1TB",
       "url": "https://catalog.onliner.by/ssd/samsung/mzv8v1t0bw",
       "purchaseDate": "2025-04-17",
