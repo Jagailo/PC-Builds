@@ -15,7 +15,7 @@ async function fetchEURtoUSD(date) {
   }
 
   try {
-    const response = await fetch(`https://api.frankfurter.app/${date}?from=EUR&to=USD`);
+    const response = await fetch(`https://api.frankfurter.dev/v1/${date}?from=EUR&to=USD`);
     const data = await response.json();
     exchangeRatesCache.EUR[date] = data.rates.USD;
     return exchangeRatesCache.EUR[date];
