@@ -2,10 +2,10 @@
   "name": "ПК Егора",
   "parts": [
     {
-      "name": "Процессор AMD Ryzen 5 3600",
-      "url": "https://catalog.onliner.by/cpu/amd/rzn53600",
-      "purchaseDate": "2020-05-31",
-      "price": 417.81,
+      "name": "Процессор AMD Ryzen 7 5700X",
+      "url": "https://catalog.onliner.by/cpu/amd/100000000926",
+      "purchaseDate": "2026-10-23",
+      "price": 501.93,
       "currency": "BYN",
       "amount": 1,
       "order": 0,

@@ -1,101 +1,89 @@
-const exchangeRatesCache = {
-  BYN: {},
-  EUR: {}
-};
+const exchangeRatesCache = new Map();
 
-async function getCurrentBYNRate() {
-  const today = new Date().toISOString().split('T')[0];
-  return await fetchBYNtoUSD(today);
+async function fetchJson(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${url}`);
+  }
+
+  return response.json();
 }
 
-// Function to fetch EUR to USD exchange rate
-async function fetchEURtoUSD(date) {
-  if (exchangeRatesCache.EUR[date]) {
-    return exchangeRatesCache.EUR[date];
+// Caches promises rather than values so that parallel requests for the same date share a single fetch
+function getCachedRate(key, fetchRate) {
+  if (!exchangeRatesCache.has(key)) {
+    exchangeRatesCache.set(key, fetchRate().catch(error => {
+      console.error(`Error fetching ${key} rate:`, error);
+      return null;
+    }));
   }
 
-  try {
-    const response = await fetch(`https://api.frankfurter.dev/v1/${date}?from=EUR&to=USD`);
-    const data = await response.json();
-    exchangeRatesCache.EUR[date] = data.rates.USD;
-    return exchangeRatesCache.EUR[date];
-  } catch (error) {
-    console.error('Error fetching EUR to USD rate:', error);
-    return null;
-  }
+  return exchangeRatesCache.get(key);
 }
 
-// Function to fetch BYN exchange rate
-async function fetchBYNtoUSD(date) {
-  if (exchangeRatesCache.BYN[date]) {
-    return exchangeRatesCache.BYN[date];
-  }
-
-  try {
-    const response = await fetch(`https://api.nbrb.by/exrates/rates?periodicity=0&ondate=${date}`);
-    const rates = await response.json();
-    const usdRate = rates.find(rate => rate.Cur_Abbreviation === 'USD');
-    exchangeRatesCache.BYN[date] = usdRate ? usdRate.Cur_OfficialRate : null;
-    return exchangeRatesCache.BYN[date];
-  } catch (error) {
-    console.error('Error fetching BYN to USD rate:', error);
-    return null;
-  }
+function getBYNPerUSD(date) {
+  return getCachedRate(`BYN:${date}`, async () => {
+    const rates = await fetchJson(`https://api.nbrb.by/exrates/rates?periodicity=0&ondate=${date}`);
+    return rates.find(rate => rate.Cur_Abbreviation === 'USD')?.Cur_OfficialRate ?? null;
+  });
 }
 
-// Combined function to get exchange rate based on currency
-async function getExchangeRate(date, currency) {
+function getUSDPerEUR(date) {
+  return getCachedRate(`EUR:${date}`, async () => {
+    const data = await fetchJson(`https://api.frankfurter.dev/v1/${date}?from=EUR&to=USD`);
+    return data.rates?.USD ?? null;
+  });
+}
+
+async function convertToUSD(price, currency, date) {
   switch (currency) {
-    case 'BYN':
-      return await fetchBYNtoUSD(date);
-    case 'EUR':
-      return await fetchEURtoUSD(date);
     case 'USD':
-      return 1; // No conversion needed
+      return price;
+    case 'EUR': {
+      const rate = await getUSDPerEUR(date);
+      return rate ? price * rate : null;
+    }
+    case 'BYN': {
+      const rate = await getBYNPerUSD(date);
+      return rate ? price / rate : null;
+    }
     default:
       return null;
   }
 }
 
-// Function to display date
 function printLocalDate(dateString) {
   const date = new Date(dateString);
   if (isNaN(date)) {
     console.error('Invalid date format!');
-    return;
+    return '';
   }
 
-  return date.toLocaleDateString();
+  // Date-only ISO strings are parsed as UTC midnight, so formatting in UTC keeps the day from shifting
+  return date.toLocaleDateString('ru-RU', { timeZone: 'UTC' });
 }
 
 function formatPrice(item) {
-  if (item.price === 0) {
-    return "0";
-  }
-
-  let formattedPrice = '';
+  const price = item.price.toFixed(2);
   switch (item.currency) {
     case 'BYN':
-      formattedPrice = item.price.toFixed(2) + ' р.';
-      break;
+      return `${price} р.`;
     case 'USD':
-      formattedPrice = '$' + item.price.toFixed(2);
-      break;
+      return `$${price}`;
     case 'EUR':
-      formattedPrice = '€' + item.price.toFixed(2);
-      break;
+      return `€${price}`;
     default:
-      formattedPrice = item.price.toFixed(2);
+      return price;
   }
-
-  return formattedPrice;
 }
 
-// Function to load JSON data
+function withTooltip(content, tooltip) {
+  return `<span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${tooltip}">${content}</span>`;
+}
+
 async function loadBuildData(jsonUrl) {
   try {
-    const response = await fetch(jsonUrl);
-    const data = await response.json();
+    const data = await fetchJson(jsonUrl);
 
     document.title = data.name;
     document.getElementById('build-title').textContent = data.name;
@@ -107,73 +95,65 @@ async function loadBuildData(jsonUrl) {
   }
 }
 
-// Function to render html
 async function renderBuild(jsonUrl) {
-  const parts = await loadBuildData(jsonUrl);
+  const today = new Date().toISOString().split('T')[0];
+  const [parts, currentBYNRate] = await Promise.all([loadBuildData(jsonUrl), getBYNPerUSD(today)]);
+  parts.sort((a, b) => a.order - b.order);
+
+  const usdPrices = await Promise.all(parts.map(part => convertToUSD(part.price, part.currency, part.purchaseDate)));
+
+  const toBYNTooltip = usdPrice => currentBYNRate ? `${(usdPrice * currentBYNRate).toFixed(2)} р.` : 'Курс BYN недоступен';
+  const unavailable = withTooltip('недоступно', 'Не удалось получить курс на дату покупки');
+
   const tableBody = document.getElementById('parts-table-body');
-  const totalBuildCostElement = document.getElementById('total-build-cost');
   let totalBuildCostUSD = 0;
+  let hasUnavailableParts = false;
 
-  // Get current BYN rate once for all items
-  const currentBYNRate = await getCurrentBYNRate();
+  parts.forEach((part, index) => {
+    const usdPrice = usdPrices[index];
 
-  for (const part of parts) {
-    const rate = await getExchangeRate(part.purchaseDate, part.currency);
-
-    if (rate !== null) {
-      let usdPrice;
-      if (part.currency === 'USD') {
-        usdPrice = part.price;
-      } else if (part.currency === 'EUR') {
-        usdPrice = part.price * rate;
-      } else { // BYN
-        usdPrice = part.price / rate;
-      }
-
-      const totalUSDPrice = (usdPrice * part.amount).toFixed(2);
-      totalBuildCostUSD += parseFloat(totalUSDPrice);
-
-      // Calculate current BYN price
-      const currentBYNPrice = (usdPrice * currentBYNRate).toFixed(2);
-
-      let nameContent = `<a href="${part.url}" target="_blank">${part.name}</a>`;
-      if (part.isUsed) {
-        nameContent += `<span class="svg-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Бывший в употреблении"></span>`;
-      }
-
-      const row = document.createElement('tr');
-      const priceCell = part.price === 0
-        ? `<td class="text-center">0</td>`
-        : `<td class="text-center">
-            ${part.currency === 'USD'
-          ? `<span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">${formatPrice(part)}</span>`
-          : `${formatPrice(part)} <span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${currentBYNPrice} р.">($${usdPrice.toFixed(2)})</span>`
-        }
-          </td>`;
-
-      const amountCell = `<td class="text-center">${part.amount}</td>`;
-      const totalCell = part.price === 0
-        ? `<td class="text-center">0</td>`
-        : `<td class="text-center">$${totalUSDPrice}</td>`;
-
-      row.innerHTML = `
-        <td>${nameContent}</td>
-        <td class="text-center">${printLocalDate(part.purchaseDate)}</td>
-        ${priceCell}
-        ${amountCell}
-        ${totalCell}
-      `;
-
-      tableBody.appendChild(row);
+    let nameContent = `<a href="${part.url}" target="_blank">${part.name}</a>`;
+    if (part.isUsed) {
+      nameContent += `<span class="svg-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Бывший в употреблении"></span>`;
     }
-  }
 
-  const totalBYNPrice = (totalBuildCostUSD * currentBYNRate).toFixed(2);
+    let priceContent;
+    let totalContent;
+    if (part.price === 0) {
+      priceContent = '0';
+      totalContent = '0';
+    } else if (usdPrice === null) {
+      hasUnavailableParts = true;
+      priceContent = formatPrice(part);
+      totalContent = unavailable;
+    } else {
+      const totalUSDPrice = parseFloat((usdPrice * part.amount).toFixed(2));
+      totalBuildCostUSD += totalUSDPrice;
 
-  totalBuildCostElement.innerHTML = `
+      priceContent = part.currency === 'USD'
+        ? withTooltip(formatPrice(part), toBYNTooltip(usdPrice))
+        : `${formatPrice(part)} ${withTooltip(`($${usdPrice.toFixed(2)})`, toBYNTooltip(usdPrice))}`;
+      totalContent = `$${totalUSDPrice.toFixed(2)}`;
+    }
+
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${nameContent}</td>
+      <td class="text-center">${printLocalDate(part.purchaseDate)}</td>
+      <td class="text-center">${priceContent}</td>
+      <td class="text-center">${part.amount}</td>
+      <td class="text-center">${totalContent}</td>
+    `;
+
+    tableBody.appendChild(row);
+  });
+
+  const totalLabel = hasUnavailableParts ? 'Итого (без учёта недоступных позиций):' : 'Итого:';
+
+  document.getElementById('total-build-cost').innerHTML = `
     <tr>
-      <td colspan="4" class="text-right"><strong>Итого:</strong></td>
-      <td class="text-center"><strong><span class="usd-price" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${totalBYNPrice} р.">$${totalBuildCostUSD.toFixed(2)}</span></strong></td>
+      <td colspan="4" class="text-end"><strong>${totalLabel}</strong></td>
+      <td class="text-center"><strong>${withTooltip(`$${totalBuildCostUSD.toFixed(2)}`, toBYNTooltip(totalBuildCostUSD))}</strong></td>
     </tr>
   `;
 
@@ -181,6 +161,5 @@ async function renderBuild(jsonUrl) {
 }
 
 function initializeTooltips() {
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-  [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 }
